@@ -1,33 +1,60 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.container{
+  flex: 0 0 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.temprature-today-date{
+  margin-bottom: 10px;
+}
+.temprature-today{
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 15px 30px;
+  margin: 50px 10px 50px 10px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
 }
-
-.App-link {
-  color: #61dafb;
+.temprature-today-image{
+  width: 80px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.current-temprature-today{
+  font-size: 40px;
+}
+.current-temprature-today span{
+  font-size: 20px;
+}
+.temprature-b{
+  border-radius: 5px;
+  text-align: center;
+  padding: 15px 10px;
+  margin: 0 10px 20px 10px;
+}
+.current-temprature{
+  font-size: 25px;
+}
+.current-temprature span{
+  font-size: 15px;
+}
+.temprature-image{
+  width: 50px;
+}
+.temprature-date{
+  margin-bottom: 10px;
+}
+.current-temprature-hourly{
+  margin: 10px 15px 0 0;
+  display: flex;
+  width: 115px;
+}
+.current-temprature-hourly div{
+  margin: 0 5px 0 5px;
+  flex: 1 1 100%;
+  text-align: right;
 }
